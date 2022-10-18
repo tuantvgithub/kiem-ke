@@ -1,0 +1,21 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /api/inventory
+
+spring:
+  application:
+    name: m-inventory
+  data:
+    mongodb:
+      uri: ${DB_URI}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9101/eureka
+
+app:
+  page:
+    default-skip: 0
+    default-limit: 10
